@@ -8,32 +8,49 @@
 <html>
 	<head>
 		<title> SE - Forms Pages </title>
+		<link href="css/style_forms.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<form action="php/login.php" method="post" id="login">
-			<fieldset>
-				<legend>Login Information</legend>
-				<h1>Please log in</h1>
-				<p>Username: <input type="text" name="username"/></p>
-				<p>Password: <input type="password" name="password" required/></p>
-				<input type="submit" value="Log In"/>
-				<input type="image" alt="Alternative Log In" src="images/login.png" width="100"/>
-				<p><a href="request_access.html">Request Access</a></p>
-			</fieldset>
 
-			<fieldset>
-			<legend>Favourite Food</legend>
-				<input type="radio" name="fru_or_veg" value="Fruits" />	Fruits	
-				<input type="radio" name="fru_or_veg" value="Vegetables" /> Vegetables
-				<p>Check all that applies:</p>		
-				<input type="checkbox" name="fruits" value="Mangoes" /> Mangoes <br />	
-				<input type="checkbox" name="fruits" value="Watermelons" /> Watermelons <br />	
-				<input type="checkbox" name="fruits" value="Bananas" /> Bananas <br />	
-				<input type="checkbox" name="vegetables" value="Broccoli" /> Broccoli <br />	
-				<input type="checkbox" name="vegetables" value="Lettuce" /> Lettuce <br />	
-				<input type="checkbox" name="vegetables" value="Kale" /> Kale <br />	
-			</fieldset>
+		<ul class="bullet">
+			<li class="h_subpages" > <a class="subpages" href="about.html"> About </a></li>
+			<li class="h_subpages" > <a class="subpages" href="documents.html"> Documents </a></li>
+			<li class="h_subpages" > <a class="subpages" href="images.html"> Images and Videos </a></li>
+			<li class="h_subpages" > <a class="subpages" href="plan.html"> Project Plan </a></li>
+			<li class="h_subpages" > <a class="subpages" href="jdiploma_logbook.html"> Weekly Log books </a></li>
+			<li class="h_subpages" > <a class="subpages" href="forms.html"> Forms </a></li>
+		</ul>
+
+		<form action="php/login.php" method="post" id="login">
+
+			<div>
+				<fieldset>
+					<legend>Login Information</legend>
+					<h1>Please log in</h1>
+					<p>Username: <input type="text" name="username" class="input_username"/></p>
+					<p>Password: <input type="password" name="password" class="input_username" required/></p>
+					<input type="submit" value="Log In"/>
+					<input type="image" alt="Alternative Log In" src="images/login.png" width="100"/>
+					<p><a href="request_access.html">Request Access</a></p>
+				</fieldset>
+			</div>
+			
+			<div>
+				<fieldset>
+					<legend>Favourite Food</legend>
+					<input type="radio" name="fru_or_veg" value="Fruits" />	Fruits	
+					<input type="radio" name="fru_or_veg" value="Vegetables" /> Vegetables
+					<p>Check all that applies:</p>		
+					<input type="checkbox" name="fruits" value="Mangoes" /> Mangoes <br />	
+					<input type="checkbox" name="fruits" value="Watermelons" /> Watermelons <br />	
+					<input type="checkbox" name="fruits" value="Bananas" /> Bananas <br />	
+					<input type="checkbox" name="vegetables" value="Broccoli" /> Broccoli <br />	
+					<input type="checkbox" name="vegetables" value="Lettuce" /> Lettuce <br />	
+					<input type="checkbox" name="vegetables" value="Kale" /> Kale <br />	
+				</fieldset>
+			</div>
+
 			<h2>Fruits and Vegetables</h1>
 	
 		</form>
