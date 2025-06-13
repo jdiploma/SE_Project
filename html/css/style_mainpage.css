@@ -1,0 +1,91 @@
+/*
+    style_mainpage.css
+    for mainpage.html
+*/
+
+body {
+    font-family: arial;
+    background-color: white;
+
+}
+
+h1 {
+    color:darkcyan; 
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 50px;
+    background-color: white;
+}
+
+h2 {
+    
+    color:darkcyan; 
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: bisque;
+}
+
+p.paragraph {
+    color: darkcyan; 
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-color: white;
+}
+
+div.time {
+    background-color: bisque;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5x 5px;
+    width: 200px;
+    margin: auto;
+}
+
+div.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    overflow: auto;
+}
+
+ul.bullet {
+    display: flex;
+    justify-content: center;
+    color: darkcyan; 
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    list-style-type: square;
+}
+
+li.h_subpages{
+    display: inline;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px darkcyan;
+}
+
+a:link.subpages{
+    background-color: bisque;
+    color: black; 
+    text-decoration: none;
+}
+
+a:visited.subpages{
+    color: darkcyan; 
+    text-decoration: none;
+}
+
+a:hover.subpages{
+    font-weight: bold;
+    background-color: darkcyan;
+    color:bisque;
+}
+
+
+
