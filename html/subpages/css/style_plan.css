@@ -52,6 +52,8 @@ th {
 }
 
 ul.bullet {
+    display: flex;
+    justify-content: center;
     color: darkcyan; 
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;

@@ -17,10 +17,11 @@ h1 {
 }
 
 h2 {
+    
     color:darkcyan; 
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    background-color: white;
+    background-color: bisque;
 }
 
 p.paragraph {
@@ -30,7 +31,30 @@ p.paragraph {
     background-color: white;
 }
 
+div.time {
+    background-color: bisque;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5x 5px;
+    width: 200px;
+    margin: auto;
+}
+
+div.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    overflow: auto;
+}
+
 ul.bullet {
+    display: flex;
+    justify-content: center;
     color: darkcyan; 
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
