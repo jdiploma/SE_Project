@@ -9,9 +9,13 @@
 	<head>
 		<title> SE - Forms Pages </title>
 		<link href="css/style_forms.css" type="text/css" rel="stylesheet" />
+		<script src="js/time.js" defer></script>
+		<script src="js/textcheck.js" defer></script>
 	</head>
 
 	<body>
+
+		<div class="time" id="time"></div>
 
 		<ul class="bullet">
 			<li class="h_subpages" > <a class="subpages" href="about.html"> About </a></li>
@@ -22,22 +26,24 @@
 			<li class="h_subpages" > <a class="subpages" href="forms.html"> Forms </a></li>
 		</ul>
 
-		<form action="php/login.php" method="post" id="login">
+		<form action="php/authenticate.php" method="post" id="login">
 			<div>
 				<fieldset>
 					<legend>Login Information</legend>
-					<h1>Log In</h1>
-					
 					<!-- <label for="user" class="text_label">Username:</label>
 					<input for id="user" type="text" class="text_input" name="username"/>
 					<label for="pass" class="text_label">Password:</label>
 					<input for id="pass" type="text" class="text_input" name="password" required/> -->
 
-					<p>Username: <input type="text" name="username" class="input_username"/></p>
-					<p>Password: <input type="password" name="password" class="input_username" required/></p>
+					<p>Username: <input id="user" type="text" name="username" class="input_username"/></p>
+					<p>Password: <input id="pass" type="password" name="password" class="input_username" required/></p>
 				
 					<input type="submit" value="Log In" id="submit"/>
-					<input type="image" alt="Alternative Log In" src="images/login.png" width="100"/>
+					<!-- <input type="image" alt="Alternative Log In" src="images/login.png" width="100"/> -->
+					
+					<div id="userFeedback" class="feedback"></div>
+					<div id="passFeedback" class="feedback"></div>
+
 					<p><a href="request_access.html">Request Access</a></p>
 				</fieldset>
 			</div>
@@ -57,14 +63,18 @@
 			</div>
 		</form>
 
-		<div>
-			<h2>Request Access</h2>
-			<form action="php/request_acc.php" method="post" id="access">
-				<p> Tell us a bit about yourself </p>
-				<textarea> Other details... </textarea>
-			</form>
-			<h4> <a href="../mainpage.html"> Main Page </a></h1>
-		</div>
-		
+		<form action="php/request_acc.php" method="post" id="access">
+			<div>
+				<fieldset>
+					<legend>Request Access</legend>
+					<p> Tell us a bit about yourself </p>
+					<textarea id="otherText"> Other details... </textarea>
+					<p id="charactersLeft"></p>
+					<p id="lastKey"></p>
+				</fieldset>
+			</div>
+		</form>
     </body>
+
+	<h4> <a href="../mainpage.html"> Main Page </a></h1>
 </html>
